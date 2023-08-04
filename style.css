@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Raiderfont";
+    src: url();
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.left,.right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+.left{
+    background-color: rgb(185, 184, 184);
+    left: 0;
+    width: 0%;
+}
+.right{
+    background-color: black;
+    right: 0;
+    width: 100%;
+}
+.nav ul{
+    display: flex;
+align-items: center;
+justify-content: space-around;
+height: 80px;
+padding: 0,20px;     
+}
+.nav ul li{
+    display: inline-block;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 0,30px;
+}
+.nav .logo{
+    flex: 1;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+.nav .menu{
+    flex: 1;
+    font-size: 18px;
+   
+}
+.nav .collection{
+    flex: 1;
+
+}
+.nav .explore{
+    flex: 4;
+
+}
+.nav .search{
+    flex: 3;
+
+}
+.nav .profile{
+    flex: 0;
+}
+.nav .profile .img{
+background-image: url("https://raw.githubusercontent.com/codicts/Photography-Portfolio-Landing-Page/master/img/profile.jpg");
+    background-position: 50%;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.img-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+}
+.img-wrapper .karina{
+    background-image: url("https://raw.githubusercontent.com/codicts/Photography-Portfolio-Landing-Page/master/img/karina.jpg");
+    background-size: cover;
+    height: 550px;
+    width: 0;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    background: rgba(0,0,0,.8);
+    padding: 0 10px;
+
+}
+.info ul li{
+    display: inline-block;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: whitesmoke;
+    font-size: 8px;
+    font-weight: 600;
+}
+.info i{
+    font-size: 18px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+.text h1{
+    color: whitesmoke;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+.text p {
+    font-size: 20px;
+    color: whitesmoke;
+}
+.bottomnav{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+.bottomnav ul li{
+    color: whitesmoke;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.name{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 90px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px whitesmoke;
+    left: -270px;
+}
